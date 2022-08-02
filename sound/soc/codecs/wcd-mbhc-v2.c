@@ -102,6 +102,7 @@ static void __hphocp_off_report(struct wcd_mbhc *mbhc, u32 jack_status,
 		mbhc->hph_status &= ~jack_status;
 		wcd_mbhc_jack_report(mbhc, &mbhc->headset_jack,
 				     mbhc->hph_status, WCD_MBHC_JACK_MASK);
+                msleep(900);
 		WCD_MBHC_REG_UPDATE_BITS(WCD_MBHC_OCP_FSM_EN, 0);
 		WCD_MBHC_REG_UPDATE_BITS(WCD_MBHC_OCP_FSM_EN, 1);
 		/*
