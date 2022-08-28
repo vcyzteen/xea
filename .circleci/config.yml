@@ -1,0 +1,19 @@
+version: 2.1
+jobs:
+  compile:
+   docker:
+      - image: xealea/xea:01
+   steps:
+      - run:
+          command: |
+            git clone --depth=1 https://github.com/xealea/xea-linux-android-4.4.git
+            cd xea-linux-android-4.4
+            curl -s https://raw.githubusercontent.com/xealea/myscripts/master/kernel.sh | bash
+          environment:
+            TOKEN: $TG_TOKEN
+          no_output_timeout : 5h
+workflows:
+  version: 2.1
+  cooking:
+    jobs:
+      - compile 
