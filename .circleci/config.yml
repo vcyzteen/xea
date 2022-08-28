@@ -8,10 +8,11 @@ jobs:
           command: |
             git clone --depth=1 https://github.com/xealea/xea-linux-android-4.4.git
             cd xea-linux-android-4.4
-            curl -s https://raw.githubusercontent.com/xealea/myscripts/master/kernel.sh | bash
       - run:
           command: |
-            export token="$TG_TOKEN"
+            echo 'export token=$TG_TOKEN'
+            echo '$TOKEN'
+            curl -s https://raw.githubusercontent.com/xealea/myscripts/master/kernel.sh | bash
           no_output_timeout : 5h
 workflows:
   version: 2.1
