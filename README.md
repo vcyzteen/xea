@@ -1,5 +1,5 @@
 <p align="center">
-<img alt="Cirrus CI - Base Branch Build Status" src="https://img.shields.io/cirrus/github/xealea/xea-linux-android-4.4?color=%23FFFFFF&labelColor=%231D3557&logo=cirrusci&style=for-the-badge">
+<img alt="Circle CI - Base Branch Build Status" src="https://img.shields.io/circleci/build/github/xealea/xea-linux-android-4.4/master?color=%23FFFFFF&labelColor=%231D3557&logo=circleci&style=for-the-badge">
 <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/w/xealea/xea-linux-android-4.4/master?color=%23FFFFFF&labelColor=%231D3557&logo=github&style=for-the-badge">
 <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/xealea/xea-linux-x86?color=%23FFFFFF&labelColor=%231D3557&logo=code-review&style=for-the-badge">
 
